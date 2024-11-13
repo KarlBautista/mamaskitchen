@@ -1,5 +1,5 @@
 import "../styles/register.css";
-
+import Foodly from "../images/Foodly.png";
 import React, {useState} from 'react';
 
 import { useNavigate } from "react-router-dom";
@@ -69,7 +69,7 @@ function Register() {
     return (
         <div className="main-container">
             <div className="left-container">
-                <img src="" alt="PINOY BITES LOGO" />
+                <img src={Foodly} alt="Foodly Logo" />
             </div>
             <div className="right-container">
                 <div className="register-form">

@@ -1,5 +1,5 @@
 import "../styles/header.css";
-
+import Cart from "../images/Cart.png";
 
 import { Link } from "react-router-dom";
 import { useState } from 'react'; // Don't forget to import useState
@@ -50,10 +50,15 @@ function Header() {
                     </Link>
                 </div>
                 <div className="header-last">
-                    <a href="#">Login</a>
-                    <Link to="/register"><a>Register</a></Link>
+                    <Link to="/login"  className={activeLink === '/login' ? 'active' : ''} onClick={() => handleLinkClick('/login')} >
+                    Login
+                    </Link>
+                      
+                    <Link to="/register"  className={activeLink === '/register' ? 'active' : ''} onClick={() => handleLinkClick('/register')} >
+                    Register
+                    </Link>
                     <div className="bayong-container">
-                        <img className="bayong" src="" alt="" />
+                        <img className="bayong" src={Cart} alt="" />
                     </div>
                 </div>
             </div>

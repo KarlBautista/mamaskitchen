@@ -9,7 +9,11 @@ import {
 import Home from "./components/Home"
 import Register from "./components/Register"
 import Header from "./components/Header"
-
+import Stores from "./components/Stores"
+import SearchCravings from './components/SearchCravings';
+import StartSelling from './components/StartSelling';
+import AboutUs from './components/AboutUs';
+import Login from "./components/Login"
 
 
 
@@ -22,8 +26,11 @@ function App() {
      <Routes>
          
           <Route path="/" element= {<Home />}></Route>
-
-        
+          <Route path="/stores" element= {<Stores />}></Route>
+          <Route path="/search-cravings" element= {<SearchCravings />}></Route>
+          <Route path="/start-selling" element= {<StartSelling />}></Route>
+          <Route path="/about-us" element= {<AboutUs />}></Route>
+          <Route path="/login" element= {<Login />}></Route>
           <Route path="/register" element= {<Register />}></Route>
 
 
