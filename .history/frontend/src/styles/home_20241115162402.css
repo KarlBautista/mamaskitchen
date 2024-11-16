@@ -1,0 +1,105 @@
+.home-container {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.line-1{
+    width: 80%;
+    height: 1px;
+    background-color: #333;
+    opacity: 0.2;
+    margin-bottom: 10px;
+}
+
+.front-page-picture {
+    position: relative;
+    width: 80%;
+  
+   
+  
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.front-page-picture:hover .slider-button{
+    opacity: 1;
+}
+
+
+
+.image-slider {
+    width: 100%;
+   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}
+
+img:hover{
+
+    cursor: pointer;
+    transform: scale(1.01);
+  
+    
+}
+
+img{
+    transition: transform 0.5s;
+
+
+}
+.slider-image {
+    width: 100%;
+   
+
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   back
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 24px;
+    opacity: 0;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+/* Navigation Dots */
+.navigation-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #333;
+}
