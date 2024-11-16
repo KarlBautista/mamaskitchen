@@ -1,0 +1,159 @@
+/* Ensure the container spans the full viewport */
+
+
+.stores-container {
+    display: flex;
+    flex-direction: row; /* If you want the sidebar and main container side by side */
+    height: auto; /* Ensure the container can grow with content */
+    width: 100%;
+    overflow: auto; /* Allow scrolling */
+    background-color: #f9f9f9;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 20%; /* Adjust width as needed */
+    background-color:whitesmoke;
+    color:#333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover {
+    background-color: white;
+}
+
+/* Main container styling */
+.main-container {
+ 
+    display: flex;
+   
+    padding: 20px;
+    flex-direction: column;
+}
+
+/* Video platform styling */
+.video-platform-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.video-platform {
+    width: 99%; /* Adjust width as needed */
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-platform video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.search-stores{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search-stores input{
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    padding: 0 20px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.store-categories{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.food-classifications {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.food-class-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 20px;
+}
+
+.food-class {
+    width: 100%;
+   
+    margin: 0; /* Remove default list margin */
+    padding: 0; /* Remove default list padding */
+    list-style: none; /* Remove bullet points */
+    
+}
+
+.food-class li {
+    padding: 8px 0; /* Add space between items */
+    text-align: left; /* Ensure text aligns to the left */
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    
+}
+
+.food-class li:hover{
+    font-weight: bold;
+}
+
+
+.stores{
+    width: 100%;
+  
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
+}
+
+.card-stores{
+    width:500px;
+    height: 250px;
+    background-color: #333;
+    margin-top: 20px;
+}

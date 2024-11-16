@@ -1,0 +1,16 @@
+
+
+.stores-container{
+    width: 100%;
+   height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+.sidebar{
+    width: 20%;
+    background-color: whitesmoke;
+    height: 100%;
+}

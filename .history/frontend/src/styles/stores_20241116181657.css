@@ -1,0 +1,11 @@
+.stores-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebar{
+    width: 100%;
+    background-color: #333;
+}
