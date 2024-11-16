@@ -68,7 +68,7 @@ function Register() {
     };
 
     return (
-        <div className="main-container">
+        <div className="register-container">
             <div className="left-container">
                 <img src={Foodly} alt="Foodly Logo" />
             </div>
