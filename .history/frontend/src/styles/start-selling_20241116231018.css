@@ -1,0 +1,43 @@
+
+.start-selling-container{
+   height: 100vh    ;
+    width: 100%;
+
+}
+
+.start-selling-left{
+    width: 20%;
+    height: 100%;
+    background-color: whitesmoke
+}
+
+
+.start-selling-right{
+    width: 20%;
+    height: 100%;
+    background-color: whitesmoke
+}
+
+.start-selling{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+ 
+    
+
+}
+
+.step-1{
+    width: 100%;
+    height: 50%;
+    border: 2px solid black;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.step-1-title{
+    font-size: 1.5rem;
+}
+

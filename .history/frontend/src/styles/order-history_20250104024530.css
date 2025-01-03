@@ -1,0 +1,73 @@
+.order-history-container {
+    width: 100%;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.order-history-title {
+    font-size: 2rem;
+    color: #FF914D;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-card {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    padding: ;
+}
+
+.order-card:hover {
+    transform: scale(1.01);
+    border: #FF914D 1px solid;
+}
+
+
+
+.order-id {
+    font-size: 1.5rem;
+    color: #FF914D;
+}
+
+.order-items-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FF914D;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.food-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.order-item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-item-details p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.order-item-details p strong {
+    font-weight: bold;
+}

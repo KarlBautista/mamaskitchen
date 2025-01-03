@@ -1,0 +1,25 @@
+
+.start-selling-container{
+    height: 100%;
+    width: 100%;
+
+}
+
+.start-selling-left{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+}
+
+
+.start-selling-right{
+    width: 20%;
+    height: 100%;
+    background-color: red;
+}
+
+.start-selling{
+    width: 60%;
+    height: 100%;
+
+}

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Romanesco&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html, body{
+    
+}
+.register-container {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+   
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+
+.left-container{
+    width: 50%;
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+
+.right-container{
+    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+   
+}
+
+img{
+    width: 500px;
+    height: 500px;
+
+}
+
+.register-form{
+   
+    width: 80%;
+    height: 80%;
+    
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+    gap: 50px;
+    
+}
+
+.register-form .register-title{
+
+
+    font-size: 3rem;
+    font-weight: bold;
+    color: #E11B70;
+    text-transform: uppercase;
+}
+
+.registration{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.registration input{
+    width: 80%;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    padding: 20px;
+    border: none;
+}
+
+.registration button{
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 1.3rem;
+    background-color: #E11B70;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/* SweetAlert2 custom styles */
+.custom-popup {
+    background-color: white; /* Soft background color */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.custom-popup .swal2-title {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+}
+
+
+/* Apply Poppins font to SweetAlert title */
+.swal2-title {
+    font-family: 'Poppins', sans-serif !important;
+  }
+  
+  /* If you want to apply it to all SweetAlert content */
+  .swal2-html-container {
+    font-family: 'Poppins', sans-serif !important;
+  }
+  
+
+
+

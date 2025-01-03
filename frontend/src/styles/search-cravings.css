@@ -1,0 +1,310 @@
+/* Ensure the container spans the full viewport */
+
+.stores-container {
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-color: white; 
+    font-family: "Poppins", sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: sticky;
+    top: 0;
+    width: 15%; /* Fixed width of 25% */
+    background-color: white;
+    color: #333;
+    height: 100vh; /* Make it span the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover {
+    background-color: white;
+    color:#FF914D;
+}
+
+/* Main container styling */
+.main-container {
+    flex: 1; /* Allow main content to grow and fill the remaining space */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+/* Video platform styling */
+.video-platform-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.video-platform {
+    width: 99%; /* Adjust width as needed */
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-platform video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.search-stores{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+
+}
+
+.search-stores input{
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 20px;
+    font-size: 1rem;
+    outline: none;
+    background-color: whitesmoke;
+}
+
+.search-stores input:focus{
+    border: 1px solid #FF914D;
+}
+
+.store-categories{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF914D;
+    
+}
+
+.food-classifications {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.food-class-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 20px;
+}
+
+.food-class {
+    width: 100%;
+   
+    margin: 0; /* Remove default list margin */
+    padding: 0; /* Remove default list padding */
+    list-style: none; /* Remove bullet points */
+    
+}
+
+.food-class li {
+    padding: 8px 0; /* Add space between items */
+    text-align: left; /* Ensure text aligns to the left */
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    
+}
+
+.food-class li:hover{
+    font-weight: bold;
+}
+
+
+.foods {
+    width: 100%;
+    gap: 10px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 items per row */
+    grid-template-rows: auto;
+    min-height: 100vh;;
+}
+
+
+
+
+
+.card-foods {
+    width: 100%;
+    height: 250px;
+    background-color: #FF914D;
+    position: relative;
+    overflow: hidden;
+}
+.card-foods img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+   
+    color: white;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+    cursor: pointer;
+}
+
+.card-foods:hover .card-details {
+    opacity: 1; /* Show on hover */
+}
+
+.dish-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dish-price {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.add-to-cart {
+    background-color: #FF914D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #FF6B1D;
+}
+
+
+.food-class li.active {
+    font-weight: bold;
+    color: #FF914D;
+}
+.card-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+.card-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+}
+.card-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+.card-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}
+    
+
+/* Style for Add, Update, and Delete buttons */
+.add-menu-btn, .update-btn, .delete-btn {
+    background-color: #FF914D;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* Hover effect */
+.add-menu-btn:hover, .update-btn:hover, .delete-btn:hover {
+    background-color: #FF6B1D;
+    transform: scale(1.05);
+}
+
+/* Focus effect for accessibility */
+.add-menu-btn:focus, .update-btn:focus, .delete-btn:focus {
+    outline: 2px solid #FF914D;
+    outline-offset: 2px;
+}
+
+/* Optional: Style the buttons in the dish cards (for Update and Delete) */
+.card-foods .action-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    display: flex;
+    gap: 10px;
+}
+
+/* Optional: Style for buttons inside SweetAlert form inputs */
+.swal2-input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #FF914D;
+    background-color: whitesmoke;
+}
+
+/* Style for SweetAlert buttons */
+.swal2-confirm, .swal2-cancel {
+    background-color: #FF914D;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.swal2-confirm:hover, .swal2-cancel:hover {
+    background-color: #FF6B1D;
+}

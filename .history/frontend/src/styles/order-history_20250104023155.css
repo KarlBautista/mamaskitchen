@@ -1,0 +1,47 @@
+.order-history-container {
+    padding: 20px;
+  }
+  
+  .orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .order-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .order-card h3 {
+    margin: 0;
+  }
+  
+  .order-card ul {
+    padding-left: 20px;
+  }
+  
+  .order-card li {
+    margin-bottom: 5px;
+  }
+  
+
+  .food-image {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .order-item-details {
+    flex-grow: 1;
+  }
+  

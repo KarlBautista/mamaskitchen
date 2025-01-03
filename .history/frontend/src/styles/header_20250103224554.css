@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Romanesco&display=swap');
+.header-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FF914D;   
+    padding: 10px 20px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.header-container.scrolled a::after {
+    background-color:#FF914D;
+}
+
+.header-container.scrolled {
+    background-color: white;
+    color: #FF914D;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.header-container.visible {
+    transform: translateY(0); /* Show header */
+    opacity: 1;
+}
+
+.header-container.hidden {
+    transform: translateY(-100%); /* Hide header */
+    opacity: 0;
+}
+
+.header-container.scrolled .bayong{
+    color: #FF914D;
+}
+.header-logo {
+    width: auto; /* Adjust width dynamically */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.header-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.header-logo img {
+    max-width: 150px; /* Set a max width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover effects */
+}
+
+.header-logo img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    filter: brightness(1.1); /* Brighten the image */
+}
+
+
+.header-container.scrolled .header-logo {
+   color: #FF914D; /* Change color on scroll */
+}
+.header-container.scrolled i{
+    color: #FF914D;
+}
+
+
+.header-logo p {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.header-container.scrolled a{
+    color: #FF914D;
+}
+
+.header-container.scrolled .{
+    color: #FF914D;
+}
+
+.header-container.scrolled .user{
+    color: #FF914D;
+}
+
+
+
+.header-links{
+   
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+.header-last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    gap: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Base Style */
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+a:hover {
+   text-shadow: white;
+}
+
+/* Underline Effect */
+
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust based on spacing preference */
+    width: 100%;
+    height: 2px;
+    background-color: white; /* Underline color */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+
+a.active::after {
+    transform: scaleX(1);
+}
+
+
+
+.bayong-container{
+   
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* Base Style */
+/* Base Style */
+.bayong {
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Hover Effect */
+.bayong:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+   
+    filter: brightness(1.2); 
+}
+
+
+/* Underline Effect */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-size: 1.7rem;
+
+}
+
+.dropdown-content {
+    background-color: white;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-item {
+    color: black; /* Set text color to black */
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Optional: Dropdown toggle icon styles */
+.user-dropdown .fas.fa-user {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.bayong-container.active .bayong,
+.user-dropdown.active i {
+    position: relative;
+}
+
+.bayong-container.active .bayong::after,
+.user-dropdown.active i::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust based on spacing preference */
+    width: 100%;
+    height: 2px;
+    background-color: white; /* Underline color */
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+/* Normal state */
+.bayong-container .bayong::after,
+.user-dropdown i::after {
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+
+.header-last {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem; /* Adds spacing between icons */
+}
+
+.cart-icon i {
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.cart-icon i:hover {
+    color: #f05a28;
+}
+
+.user-dropdown i {
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.user-dropdown i:hover {
+    color: #f05a28;
+}
+
+.user-dropdown .dropdown-content {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.user-dropdown .dropdown-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.user-dropdown .dropdown-item:hover {
+    background: #f05a28;
+    color: #fff;
+}
+    

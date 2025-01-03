@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Romanesco&display=swap');
+.start-selling-container-2{
+  width: auto;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  
+
+}
+
+.start-selling-left{
+    width: 20%;
+    height: 100%;
+    background-color: whitesmoke;
+    
+}
+
+
+.start-selling-right{
+    width: 20%;
+    height: 100%;
+    background-color: whitesmoke
+}
+
+.start-selling-2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+ 
+    
+
+}
+
+/* Main Container Styling */
+.step-1-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Step 1 Form Styling */
+  .step-1 {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .step-1-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:  #E11B70;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .form-group label {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .step-1 input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .step-1 input:focus {
+    border-color: #E11B70;
+    outline: none;
+  }
+  
+  /* Display Images Section */
+  .display-images {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .image-preview {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .start-selling-logo-image,
+  .start-selling-background-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  .start-selling-logo-image {
+    height: 150px;
+  }
+  
+  .start-selling-background-image {
+    height: 300px;
+  }
+
+
+.step-2-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Step 2 Form Styling */
+  .step-2 {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .step-2-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:  #E11B70;  
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .form-group label {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .step-2 input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .step-2 input:focus {
+    border-color:  #E11B70;  
+    outline: none;
+  }
+  
+  .add-food-btn {
+    background-color:#E11B70;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-food-btn:hover {
+    background-color: hsl(334, 79%, 55%);
+  }
+  
+  /* Step 2 Preview Section */
+  .step-2-preview {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   
+  }
+  
+  .image-preview {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .food-image-preview {
+    width: 30%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+
+  .food-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .food-table th,
+  .food-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    color:  #E11B70;
+  }
+  
+  .food-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .food-table td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .deploy-market-container{
+   
+   height: 250px;
+    width: 60%
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #E11B70;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .deploy-market{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .deploy-market h1{
+    color: #E11B70;
+  }
+
+  .deploy-market p{
+    color: #E11B70;
+  }
+
+  .deploy-market button{
+   
+  }   
+
+  
