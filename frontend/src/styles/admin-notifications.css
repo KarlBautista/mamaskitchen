@@ -1,0 +1,67 @@
+.admin-notifications {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.admin-notifications h1 {
+  font-size: 2rem;
+  color: #FF914D;
+  margin-bottom: 20px;
+}
+
+.clear-all-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #FF914D;
+  color: white;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.clear-all-button:hover {
+  background-color: #FB8C00;
+}
+
+.notification-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-picture2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.remove-button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #FF914D;
+  color: white;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.remove-button:hover {
+  background-color: #FB8C00;
+}
